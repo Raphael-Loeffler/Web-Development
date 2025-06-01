@@ -33,6 +33,7 @@ print(d1.get('simple_key'))
 
 d2 = {'k1':{'k2':'hello'}}
 print(d2.get('k1').get('k2'))
+
 d3 = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 print(d3.get('k1')[0].get('nest_key')[-1][0])
 

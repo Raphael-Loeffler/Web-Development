@@ -12,7 +12,7 @@ def check_ten(n1: int,n2: int) -> bool:
 #
 # Create a function that takes in two integers and returns True if their
 # sum is 10, otherwise, return the actual sum value.
-def check_ten_sum(n1: int,n2: int) -> bool:
+def check_ten_sum(n1: int,n2: int) -> bool | int:
     # Code Here
     return True if n1 + n2 == 10 else n1 + n2
 
@@ -43,10 +43,7 @@ def last_two(mystring: str) -> str:
 # in the list.
 def seq_check(nums: list[int]) -> bool:
     # Code here
-    for i in range(len(nums) - 2):
-        if nums[i] == 1 and nums[i + 1] == 2 and nums[i + 2] == 3:
-            return True
-    return False
+    return '123' in ''.join(str(i) for i in nums)
 
 # ## Task 2.6
 #
@@ -65,8 +62,4 @@ def compare_len(s1: str, s2: str) -> int:
 # return the sum of the list. If the length of the list is odd, return the max
 # value in that list.
 def sum_or_max(mylist: list[int]) -> int:
-    # Code Here
-    if len(mylist) % 2 == 0:
-        return sum(mylist)
-    else:
-        return max(mylist)
+    return sum(mylist) if len(mylist) % 2 == 0 else max(mylist)
