@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <p>Welcome to my page...</p>
+    <p>Would you like to signup?</p>
+    <a href="{{ url_for('signup') }}" target='_blank'>Signup</a>
+</div>
+{% endblock content %}
