@@ -12,7 +12,7 @@ def signup():
 
 @app.route('/thank_you')
 def thank_you():
-    name: str = request.args.get('names')
+    name: str = request.args.get('name')
     password: str = request.args.get('password')
     return render_template('thank_you.html', name=name, password=password)
 

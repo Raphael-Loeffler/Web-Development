@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<div class="content">
+    <p>
+        Welcome to Puppy User Name Check <br>
+        <br>
+        Let's see if your User Name is secure! <br>
+        <br>
+        Fill out the form below with a User Name that has these restraints
+    </p>
+    <ul>
+        <li>Must have an upper case letter somewhere.</li>
+        <li>Must have a lower case letter somewhere.</li>
+        <li>Must have a number at the end.</li>
+    </ul>
+    <div>
+        <form action="{{ url_for('result') }}">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <button>Submit Form</button>
+        </form>
+    </div>
+</div>
 {% endblock content %}
