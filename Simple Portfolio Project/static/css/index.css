@@ -1,4 +1,93 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgray;
+    text-decoration: none;
 }
+
+header {
+    background-color: white;
+}
+
+header nav {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+
+}
+
+header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 60px;
+    padding: 0px;
+    padding-left: 20px;
+}
+
+header nav ul li {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    width: 55%;
+}
+
+main h3 {
+    color: blue;
+    font-size: larger;
+    text-decoration: underline;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact form textarea {
+    margin: 5px;
+}
+
+#contact form * {
+    padding: 5px;
+    margin: 0px;
+}
+
+#contact button {
+    margin-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 15px;
+}
+
+

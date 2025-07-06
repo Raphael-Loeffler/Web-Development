@@ -10,31 +10,11 @@ def index():
 def result():
     username: str = request.args.get('username')
     
-    requirements_failed = []
+    has_lower_case: bool = any(char.islower() for char in username)
+    has_upper_case: bool = any(char.isupper() for char in username)
+    has_number_at_the_end: bool = f"{username[-1]}".isdigit()
     
-    if not contains_one_lowercase(username):
-        requirements_failed.append(0)
-    
-    if not contains_one_uppercase(username):
-        requirements_failed.append(1)
-    
-    if not contains_number_at_the_end(username):
-        requirements_failed.append(2)
-    
-    return render_template('result.html', username=username, requirements_failed=requirements_failed)
-
-def contains_one_lowercase(s):
-    return any(char.islower() for char in s)
-
-def contains_one_uppercase(s):
-    return any(char.isupper() for char in s)
-
-def contains_number_at_the_end(s):
-    try:
-        return ['0','1','2','3','4','5','6','7','8','9'].__contains__(s[-1])
-    except:
-        return False
-    
+    return render_template('result.html', username=username, has_lower_case=has_lower_case, has_upper_case=has_upper_case, has_number_at_the_end=has_number_at_the_end)
 
 if __name__ == '__main__':
     app.run(debug=True)

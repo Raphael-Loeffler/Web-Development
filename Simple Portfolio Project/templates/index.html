@@ -6,13 +6,13 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../static/css/index.css">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li>1. element</li>
+                    <li><a href="">1. element</a></li>
                     <li>2. element</li>
                     <li>3. element</li>
                     <li>4. element</li>
@@ -21,21 +21,28 @@
         </header>
         <main>
             <section id="hero">
-                <h1>headline1</h1>
-                <p>paragraph</p>
+                <h3>headline1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas quam nam
+                alias ullam numquam sint id consectetur inventore corrupti, modi incidunt magnam culpa.
+                Illum dolorum laboriosam expedita quos omnis. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Odio totam vero, provident ex itaque impedit sed quae vitae aperiam 
+                non quia architecto ad cupiditate autem assumenda. Molestias debitis dolor enim! Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus excepturi
+                facilis distinctio minus, velit dolorum laborum ex, ea nam numquam.
+                A eum quod enim earum nam? Reprehenderit, laboriosam excepturi?</p>
                 <ul>
-                    <li> <a href=""> <img href="" alt="image1"> </a> </li>
-                    <li> <a href=""> <img href="" alt="image2"> </a>  </li>
-                    <li> <a href=""> <img href="" alt="image3"> </a> </li>
+                    <li> <a href=""> <img href="../static/img/dog-img-1.jpg" alt="image1"> </a> </li>
+                    <li> <a href=""> <img href="../static/img/dog-img-2.jpg" alt="image2"> </a>  </li>
+                    <li> <a href=""> <img href="../static/img/dog-img-3.jpg" alt="image3"> </a> </li>
                 </ul>
             </section>
             <section id="about">
-                <h2>headline2</h2>
+                <h3>headline2</h3>
                 <figure> <img href="" alt="figure image"> </figure>
                 <p>paragraph</p>
             </section>
             <section id="work">
-                <h4>headline4</h4>
+                <h3>headline4</h3>
                 <ul>
                     <li> <img href="" alt="image1"> </li>
                     <li> <img href="" alt="image2"> </li>
@@ -43,21 +50,27 @@
                 </ul>
             </section>
             <section id="contact">
-                <p>paragraph</p>
-                <h5>headline5</h5>
+                <h3>Contact</h3>
                     <form class="loginForm" method="get">
-                        <label for="name">Email: </label>
-                        <input type="text" id="name" value="" placeholder="Name">
-                        <label for="mail">Email: </label>
-                        <input type="email" id="mail" value="" placeholder="Email">
-                        <label for="text">Text: </label>
-                        <input type="text" id="text" value="">
+                        <div>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" value="" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="mail">Email: </label>
+                            <input type="email" id="mail" value="" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="text">Text: </label>
+                            <br>
+                            <textarea type="text" id="text" value="" placeholder="write something..."  rows="6" cols="50"></textarea>
+                        </div>
                         <button>Button</button>
                     </form>
             </section>
         </main>
         <footer>
-            <p>paragraph</p>
+            <p>Hope you liked what you saw</p>
         </footer>
     </body>
 </html>

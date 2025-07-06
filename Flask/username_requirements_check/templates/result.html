@@ -5,20 +5,22 @@
         Let's see how you performed!! <br>
     </p>
 
-    {% if requirements_failed.__len__() > 0 %}
+    {% if has_lower_case==False or has_upper_case==False or has_number_at_the_end==False %}
 
         <p>Oh no! Looks like you had issues with your username!</p>
 
+        <p>Here are the requirements you failed:</p>
+
         <ul>
-            {% if requirements_failed.__contains__(0) %}
+            {% if not has_lower_case %}
                 <li>You did not use a lowercase letter.</li>
             {% endif %}
 
-            {% if requirements_failed.__contains__(1) %}
+            {% if not has_upper_case %}
                 <li>You did not use a uppercase letter.</li>
             {% endif %}
 
-            {% if requirements_failed.__contains__(2) %}
+            {% if not has_number_at_the_end %}
                 <li>You did not end your username with a number.</li>
             {% endif %}
         </ul>
