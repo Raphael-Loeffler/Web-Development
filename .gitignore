@@ -1,3 +1,4 @@
 Instructions
-.venv
+*.venv
 __pycache__
+*.env
